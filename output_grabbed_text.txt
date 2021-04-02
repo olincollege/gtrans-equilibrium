@@ -1,2 +1,108 @@
-你好世界！ 
-我喜欢披萨 
+af: PaJeet sal nie KUSO in die straat stop nie 
+sq: Pajeet nuk do të ndalojë kusun në rrugë 
+am: PSOKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 
+ar: لن تتوقف بياجيه كوسو في الشارع 
+hy: Pajeet- ը փողոցում չի դադարի Քուրդոնին 
+az: Pajeet küçədə Cusonu dayandırmayacaq 
+eu: Pajero-k ez du Ksso kalea geldituko 
+be: Pajeet не спыніць Kuso на вуліцы 
+bn: Cibut wrids চালু করবেন না 
+bs: Pajeet neće zaustaviti Kuso na ulici 
+bg: Pajeet няма да спре на улицата 
+ca: Pajeet no aturarà a Kuso al carrer 
+ceb: Ang Pajeet wala mohunong sa mga kadalanan 
+ny: Pa laboot imayima pamsewu waukulu 
+zh-cn: 睡衣不会阻挡街上的Quasus 
+zh-tw: 睡衣不會阻擋街上的Quasus 
+co: Pajeet ùn impedisce micca kuso in u carrughju 
+hr: Padeet neće zaustaviti Kuso na ulici 
+cs: Pyse nezastaví kus na ulici 
+da: Pajeet vil ikke stoppe KUSO på gaden 
+nl: Pajeet stopt Kuso niet op straat 
+en: Pajeet will not stop kuso in the street 
+eo: Paiet ne ĉesos tason en la strato 
+et: Kaabel ei peatu Kuso tänaval 
+tl: Pajeet ay hindi titigil sa crate sa kalye. 
+fi: Laukut eivät pysähdy Kuso-kadulla 
+fr: Pajeet n'arrêtera pas Kuso dans la rue 
+fy: Pajeet sil Kuso net stopje yn 'e strjitte 
+gl: Pajet non deixará de Kuso na rúa 
+ka: Pajeet არ წყვეტს Kuso ქუჩაში 
+de: Pajeet wird Kuso nicht auf der Straße aufhalten 
+el: Το Pajeet δεν θα σταματήσει το Kuso στο δρόμο 
+gu: ક્યૂ પ્ર. સ્ટ્રીટ રોકો નહીં 
+ht: Pijeet pa pral sispann kuso nan lari an 
+ha: PS O YP has ET Sanya SHINE 
+haw: ʻAʻole aloha ka Lasso ma ke alanui 
+iw: Pajeet לא תפסיק את קוזו ברחוב 
+he: Pajeet לא תפסיק את קוזו ברחוב 
+hi: पजीत रोड में कुसो को नहीं रोकेंगे 
+hmn: Pavel yuav tsis kg ntawm txoj kev 
+hu: A kabátja nem hagyja abba Kuso-t az utcán 
+is: Pajeet mun ekki stöðva Kuso á götunni 
+ig: N'okporo ụzọ ịkwụsị 
+id: Pajeet tidak akan menghentikan Kuso di jalan 
+ga: Ní stopfaidh Pajeet Kuso ar an tsráid 
+it: Pajet non fermerà Kuso in strada 
+ja: Pajeetは路上で海を止めません 
+jw: Dhasar sing ora bakal mandheg ing dalan 
+kn: ಪುಟಗಳು ಬೀದಿಯಲ್ಲಿ ನಾಯಿಗಳನ್ನು ನಿಲ್ಲಿಸುವುದಿಲ್ಲ 
+kk: Pajeeet көшелерді тоқтата алмайды 
+km: Pajeet នឹងមិនបញ្ឈប់ Kuso នៅតាមផ្លូវទេ 
+ko: 잠옷은 Goruca에서 멀지 않습니다. 
+ku: Pajeet dê Kuso li kolanê raweste 
+ky: Мен пол көчөлөрүн токтото албайм 
+lo: Pajeet ຈະບໍ່ຢຸດ Kuso ຢູ່ຖະຫນົນ 
+la: Kuso erit tristis neque turbulentus transiens Pajeet 
+lv: Pajeet neapturēs Kuso ielu 
+lt: Pjee nesibaigs Kuso gatvėje 
+lb: De Pak sollt de Kuso an der Strooss stoppen 
+mk: Pajeet нема да го запре Kuso на улица 
+mg: Tsy hijanona eny an-dalambe i Pajeet 
+ms: Pajeet tidak akan berhenti Kuso di jalan raya 
+ml: കുലസ് തെരുവിൽ നിർത്തിയിട്ടില്ല 
+mt: Pajeet mhux se tieqaf Kuso fit-triq 
+mi: Kaore e aukati te pajeet i te Kuso i runga i te huarahi 
+mr: कुसो रस्त्यावर थांबणार नाही 
+mn: Pacett Street-ийг зогсоо 
+my: Pajeet သည် Kuso ကိုလမ်းပေါ်တွင်မရပ်တန့်ပါ 
+ne: अनुहारहरू सडकमा ब्रश रोक्दैनन् 
+no: Pjeet vil ikke stoppe Kuso på gaten 
+or: ଭାଲୁରେ ଯତ୍ନ ନେବ ନାହିଁ | 
+ps: وموندل شو چې په سړک باندې کف بندول. 
+fa: پیراهن Kuso را در خیابان متوقف نخواهد کرد 
+pl: Pajeet nie zatrzyma Kuso na ulicy 
+pt: Pajeet não vai parar o kuso na rua 
+pa: ਇਹ ਸ਼ੀਸ਼ੇ ਦੇ ਸ਼ੀਸ਼ੇ ਨੂੰ ਨਹੀਂ ਰੋਕਦਾ 
+ro: Pajeet nu va opri Kuso pe stradă 
+ru: Pajeet не остановит Кузо на улице 
+sm: Pajet o le a le taofia le cain i luga o le auala 
+gd: Cha stad pjet kuso air an t-sràid 
+sr: Пајеет неће зауставити Цус на улици 
+st: Pampiri e ke ke ea emisa ho phehella seterateng 
+sn: Kuenda kuJet ting kumashure munzira 
+sd: گهٽي ۾ سوٽ بند نه ڪندو 
+si: Pjite Cuso පාරේ නතර නොවේ 
+sk: Pajet nezastaví kus na ulici 
+sl: Izbrano ne bo prenehalo cuss na ulici 
+so: PAJT ma joojiso isticmaalka wadada 
+es: Pajeet no detendrá a Kuso en la calle. 
+su: Payeet moal eureun kuso di jalan 
+sw: Pajeet haitaacha Kuso mitaani. 
+sv: Pajeet kommer inte att stoppa Kuso på gatan 
+tg: Pajeeet зебо боздошта намешавад 
+ta: தெருவில் காஸோவை நிறுத்தாதீர்கள் 
+te: Pijebi స్ట్రా స్ట్రా స్ట్రా స్ట్రా గడ్డి 
+th: Pajeet จะไม่หยุด Kuso ในถนน 
+tr: Pijeet sokakta Kuso'yu durdurmuyor 
+tk: Pýer köşk durmaz 
+uk: Pajeet не зупинить Kuso на вулиці 
+ur: پیلیٹ سڑک میں کووسو کو روک نہیں کرے گا 
+ug: Pab كوچىدا توختاپ قالمايدۇ 
+uz: Pij'a toko 'chata va' i tama y 
+vi: Pyjeet sẽ không ngăn Kuso trên đường phố 
+cy: Ni fydd PAJEET yn stopio kau yn y stryd 
+xh: Ukuhlawula akuyi kuphelisa isitrato esitratweni 
+yi: פּדזשעט וועט ניט האַלטן קוסאָ אין די גאַס 
+yo: Papeebet kii yoo da ọna naa duro 
+zu: I-Pajeet ngeke ime emgwaqweni 
