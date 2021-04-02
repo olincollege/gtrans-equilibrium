@@ -1,4 +1,2 @@
 Hello World!
 I like pizza
-你好世界！ 
-我喜欢披萨 
