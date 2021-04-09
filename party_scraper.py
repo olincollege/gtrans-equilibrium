@@ -1,5 +1,5 @@
 """
-d
+Scraper for translationparty's "hot parties" section
 """
 import random
 import requests
@@ -15,11 +15,11 @@ parties = [party.getText()
 
 def scraper_to_text(scraped_text, output):
     """
-    Record the a random sentence from a scraped text to a txt file.
+    Record a random sentence from a list of scraped text to a txt file.
 
     Args:
-        scraped_text ([type]): [description]
-        file ([type]): [description]
+        scraped_text: a list of strings representing the scraped data
+        output: a string representing the path of the file to be written
     """
     with open(output, "w") as file:
         file.write(random.choice(scraped_text))

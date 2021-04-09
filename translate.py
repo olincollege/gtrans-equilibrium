@@ -1,5 +1,5 @@
 """
-s
+Translate from file and find equilibriums from text
 """
 from google_trans_new import google_translator
 
@@ -23,14 +23,11 @@ def translate_to(source_text, dest_language):
     """
     Translate source text into destination language
 
-    With the adaptation from the google_trans_new documentation, multithreaded
-    translation can be achieved with the request function and a pool of threads
-
     Args:
-        source_text: list of lines representing the source text
-        dest_language: string representing the destination language
+        source_text: a list of strings representing the source text
+        dest_language: a string representing the destination language
     Returns:
-        a list of translated string sentences
+        a list of translated string texts
     """
     translated = []
     translator = google_translator(url_suffix="cn", timeout=5)
@@ -46,32 +43,40 @@ def translate_times(source_text, dest_language, number_of_times):
     by a number of times
 
     Args:
-        source_text ([type]): [description]
-        dest_language ([type]): [description]
-        number_of_times:
+        source_text: a list of strings representing the source text
+        dest_language: a string representing the destination language
+        number_of_times: an int representing the number of times to be 
+            translated
     """
     langs = (dest_language, "en")
     for index in range(number_of_times):
+        # Alternating index to pick langs to translate back and forth
         source_text = translate_to(source_text, langs[index % 2])
     return source_text
 
 
-def find_equilibrium(source_text, dest_language, count=0):
+def find_equilibrium(source_text, dest_language, steps=0):
     """
-    asd
+    Finds the equilibrium of a certain text between English and a chosen
+    language
 
     Args:
-        source_text ([type]): [description]
-        dest_language ([type]): [description]
-        count (int, optional): [description]. Defaults to 0.
+        source_text: a list of strings representing the source text
+        dest_language: a string representing the destination language
+        steps: an int representing the number of steps to reach equilibrium, 
+            defaults to 0
 
     Returns:
-        [type]: [description]
+        a tuple of the equilibrium text and the amount of steps taken
     """
+    # Check if the text is at a translational equilibrium by translating that
+    # text back and forth once and comparing that to the original text
     check_result = translate_times(source_text, dest_language, 2)
     if source_text == check_result:
-        return (source_text, count)
-    return find_equilibrium(check_result, dest_language, count + 1)
+        return (source_text, steps)
+    # Recursively call this function again, but with a translated text as
+    # source text
+    return find_equilibrium(check_result, dest_language, steps + 1)
 
 # def find_equilibrium(source_text, dest_language, potential_equilibriums=[], rounds=0):
 #     temp = translate_times(source_text, dest_language, 2)
@@ -93,10 +98,20 @@ def find_equilibrium(source_text, dest_language, count=0):
 
 
 def find_max_equilibrium(equilibriums):
-    """[summary]
+    """
+    Finds the largest equilibrium step within a predetermined set of languages
+
+    Note that if there are to be more than one largest language, only the first
+    occurrance will be taken. See essay for a way to remove that largest
+    language and then carry on with finding the next largest language
 
     Args:
-        equilibriums: [description]
+        equilibriums: a dictionary in the format of {"language": no. of steps},
+            containing a set of languages and their respective steps
+
+    Returns: 
+        a tuple of the language with the largest translational equilibrium and
+        its 
     """
     maximum = 0
     max_lang = None

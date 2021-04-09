@@ -1,5 +1,5 @@
 """
-a
+Creating three visualizations to present the translational equilibrium findings
 """
 from pandas import DataFrame
 import numpy as np
@@ -22,7 +22,7 @@ for index in range(64):
 print(EQUILIBRIUMS)
 print(translate.find_max_equilibrium(EQUILIBRIUMS))
 
-# Scatterplot
+# Scatterplot using matplotlib
 x = np.array(list(EQUILIBRIUMS.keys()))
 y = np.array(list(EQUILIBRIUMS.values()))
 plt.rcParams['figure.figsize'] = [20, 5]
@@ -33,7 +33,7 @@ plt.xlabel('Language', fontsize=12)
 plt.ylabel('Steps to Equilibrium', fontsize=12)
 plt.show()
 
-# Wordcloud
+# Wordcloud using matplotlib and wordcloud
 RESULT = "output_grabbed_text.txt"
 text = translate.file_to_list(RESULT)
 translated = translate.translate_to(text, "en")
@@ -44,7 +44,7 @@ plt.imshow(word_cloud)
 plt.axis("off")
 plt.show()
 
-# Table
+# Table using matplotlib and pandas dataframe
 temp = dict(EQUILIBRIUMS)
 max_equilibriums = {}
 translated = []
