@@ -17,5 +17,3 @@ def scraper_to_text(scraped_text, output):
     """
     with open(output, "w") as file:
         file.write(random.choice(scraped_text))
-
-scraper_to_text(parties, "grabbed_text.txt")

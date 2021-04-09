@@ -33,7 +33,7 @@ def translate_to(source_text, dest_language):
         a list of translated string sentences
     """
     translated = []
-    translator = google_translator(url_suffix="cn", timeout=5)
+    translator = google_translator(url_suffix="cn", timeout=5, proxies={'http':'192.168.0.135:1087','https':'192.168.0.135:1087'})
     for line in source_text:
         translated.append(translator.translate(
             line, dest_language))
