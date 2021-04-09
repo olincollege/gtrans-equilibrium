@@ -1,11 +1,17 @@
+"""
+d
+"""
+import random
 import requests
 from bs4 import BeautifulSoup
-import random
 
-url = "https://www.translationparty.com"
-response = requests.get(url)#, proxies = proxies)
+
+URL = "https://www.translationparty.com"
+response = requests.get(URL)  # , proxies = proxies)
 soup = BeautifulSoup(response.content, "html.parser")
-parties = [party.getText() for party in soup.find(id="hotparties").find_all("a")]
+parties = [party.getText()
+           for party in soup.find(id="hotparties").find_all("a")]
+
 
 def scraper_to_text(scraped_text, output):
     """

@@ -1,8 +1,7 @@
+"""
+s
+"""
 from google_trans_new import google_translator
-# translator = google_translator(url_suffix="hk", timeout=10, proxies={'http':'192.168.0.135:1087','https':'192.168.0.135:1087'})
-from multiprocessing.dummy import Pool as ThreadPool
-import time
-import random
 
 def file_to_list(source_file):
     """
@@ -19,6 +18,7 @@ def file_to_list(source_file):
             text.append(line.strip())
     return text
 
+
 def translate_to(source_text, dest_language):
     """
     Translate source text into destination language
@@ -33,11 +33,12 @@ def translate_to(source_text, dest_language):
         a list of translated string sentences
     """
     translated = []
-    translator = google_translator(url_suffix="cn", timeout=5, proxies={'http':'192.168.0.135:1087','https':'192.168.0.135:1087'})
+    translator = google_translator(url_suffix="cn", timeout=5)
     for line in source_text:
         translated.append(translator.translate(
             line, dest_language))
     return translated
+
 
 def translate_times(source_text, dest_language, number_of_times):
     """
@@ -53,6 +54,7 @@ def translate_times(source_text, dest_language, number_of_times):
     for index in range(number_of_times):
         source_text = translate_to(source_text, langs[index % 2])
     return source_text
+
 
 def find_equilibrium(source_text, dest_language, count=0):
     """
@@ -75,7 +77,7 @@ def find_equilibrium(source_text, dest_language, count=0):
 #     temp = translate_times(source_text, dest_language, 2)
 #     if source_text == temp:
 #         return (source_text, rounds + 1)
-    
+
 #     potential_equilibriums.append(temp)
 #     if rounds > 0 and \
 #     temp == potential_equilibriums[rounds - 1] == \
@@ -88,6 +90,7 @@ def find_equilibrium(source_text, dest_language, count=0):
 #         return (temp, rounds + 1)
 
 #     return find_equilibrium(temp, dest_language, potential_equilibriums, rounds + 1)
+
 
 def find_max_equilibrium(equilibriums):
     """[summary]
