@@ -1,5 +1,8 @@
 from google_trans_new import google_translator
-translator = google_translator(url_suffix="cn", timeout=5)
+# translator = google_translator(url_suffix="hk", timeout=10, proxies={'http':'192.168.0.135:1087','https':'192.168.0.135:1087'})
+from multiprocessing.dummy import Pool as ThreadPool
+import time
+import random
 
 def file_to_list(source_file):
     """
@@ -20,6 +23,9 @@ def translate_to(source_text, dest_language):
     """
     Translate source text into destination language
 
+    With the adaptation from the google_trans_new documentation, multithreaded
+    translation can be achieved with the request function and a pool of threads
+
     Args:
         source_text: list of lines representing the source text
         dest_language: string representing the destination language
@@ -27,9 +33,10 @@ def translate_to(source_text, dest_language):
         a list of translated string sentences
     """
     translated = []
+    translator = google_translator(url_suffix="cn", timeout=5)
     for line in source_text:
         translated.append(translator.translate(
-            line, lang_tgt=dest_language))
+            line, dest_language))
     return translated
 
 def translate_times(source_text, dest_language, number_of_times):
@@ -47,20 +54,6 @@ def translate_times(source_text, dest_language, number_of_times):
         source_text = translate_to(source_text, langs[index % 2])
     return source_text
 
-def translate_file(source_file, dest_language):
-    """
-    Translate source file into destination language
-
-    Args:
-        source_file: string representing the path of the file
-        dest_language: string representing the destination language
-    """
-    text = file_to_list(source_file)
-    with open (f"output_{source_file}", "w") as file:
-        translated = translate_to(text, dest_language)
-        for line in translated:
-            file.write(f"{line}\n")
-
 def find_equilibrium(source_text, dest_language, count=0):
     """
     asd
@@ -73,10 +66,28 @@ def find_equilibrium(source_text, dest_language, count=0):
     Returns:
         [type]: [description]
     """
-    check_result = translate_times(source_text, dest_language, 4)
+    check_result = translate_times(source_text, dest_language, 2)
     if source_text == check_result:
-        return (source_text, count + 1)
+        return (source_text, count)
     return find_equilibrium(check_result, dest_language, count + 1)
+
+# def find_equilibrium(source_text, dest_language, potential_equilibriums=[], rounds=0):
+#     temp = translate_times(source_text, dest_language, 2)
+#     if source_text == temp:
+#         return (source_text, rounds + 1)
+    
+#     potential_equilibriums.append(temp)
+#     if rounds > 0 and \
+#     temp == potential_equilibriums[rounds - 1] == \
+#         potential_equilibriums[rounds]:
+#         return (temp, rounds + 1)
+
+#     if rounds > 2 and temp == potential_equilibriums[rounds - 2] == \
+#         potential_equilibriums[rounds - 1] == \
+#         potential_equilibriums[rounds - 3]:
+#         return (temp, rounds + 1)
+
+#     return find_equilibrium(temp, dest_language, potential_equilibriums, rounds + 1)
 
 def find_max_equilibrium(equilibriums):
     """[summary]
